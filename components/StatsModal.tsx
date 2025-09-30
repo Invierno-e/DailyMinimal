@@ -1,7 +1,6 @@
 import React from 'react';
-import { JournalEntry, Emotion } from '../types';
-import { EMOTIONS } from '../constants';
-// FIX: Add .tsx extension to icons import.
+import { JournalEntry, Emotion } from '../types.ts';
+import { EMOTIONS } from '../constants.ts';
 import { CloseIcon } from './icons.tsx';
 
 interface StatsModalProps {

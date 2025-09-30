@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { searchYouTubeVideos } from '../services/geminiService';
-import { Song, YouTubeSearchResult } from '../types';
-// FIX: Add .tsx extension to icons import.
+import { searchYouTubeVideos } from '../services/geminiService.ts';
+import { Song, YouTubeSearchResult } from '../types.ts';
 import { SearchIcon, CloseIcon } from './icons.tsx';
 
 interface SongSearchProps {

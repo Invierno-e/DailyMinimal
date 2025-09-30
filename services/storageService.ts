@@ -1,6 +1,7 @@
 
-import { JournalEntry } from '../types';
-import { LOCAL_STORAGE_KEY } from '../constants';
+
+import { JournalEntry } from '../types.ts';
+import { LOCAL_STORAGE_KEY } from '../constants.ts';
 
 export const getEntries = (): JournalEntry[] => {
   try {

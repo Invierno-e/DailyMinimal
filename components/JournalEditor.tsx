@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { JournalEntry, Emotion, Song } from '../types';
-import { EMOTIONS } from '../constants';
+import { JournalEntry, Emotion, Song } from '../types.ts';
+import { EMOTIONS } from '../constants.ts';
 import SongSearch from './SongSearch.tsx';
 import { MusicIcon, TrashIcon } from './icons.tsx';
 

@@ -1,4 +1,4 @@
-import { Emotion } from './types';
+import { Emotion } from './types.ts';
 
 export const EMOTIONS: { emotion: Emotion; label: string }[] = [
   { emotion: '😄', label: 'Feliz' },

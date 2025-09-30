@@ -1,5 +1,5 @@
 import { GoogleGenAI, Type } from "@google/genai";
-import { YouTubeSearchResult } from '../types';
+import { YouTubeSearchResult } from '../types.ts';
 
 if (!process.env.API_KEY) {
     console.warn("La variable de entorno API_KEY no está configurada. La búsqueda de canciones no funcionará.");
@@ -46,7 +46,7 @@ export const searchYouTubeVideos = async (query: string): Promise<YouTubeSearchR
             },
         });
 
-        // FIX: The response.text from a JSON response is a string that needs to be parsed.
+        // The response.text from a JSON response is a string that needs to be parsed.
         const jsonResponse = JSON.parse(response.text);
         return jsonResponse as YouTubeSearchResult[];
     } catch (error) {

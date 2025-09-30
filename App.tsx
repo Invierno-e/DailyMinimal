@@ -3,8 +3,8 @@ import Sidebar from './components/Sidebar.tsx';
 import JournalEditor from './components/JournalEditor.tsx';
 import WelcomeView from './components/WelcomeView.tsx';
 import StatsModal from './components/StatsModal.tsx';
-import { JournalEntry } from './types';
-import { getEntries, saveEntries } from './services/storageService';
+import { JournalEntry } from './types.ts';
+import { getEntries, saveEntries } from './services/storageService.ts';
 
 type View = 'WELCOME' | 'EDITOR';
 
