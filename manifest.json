@@ -1,0 +1,21 @@
+{
+  "name": "Zenith Journal",
+  "short_name": "Zenith",
+  "description": "A minimalist daily journal application to track your mood, thoughts, and favorite songs. All data is stored locally in your browser.",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#6366F1",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

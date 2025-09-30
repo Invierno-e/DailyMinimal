@@ -1,0 +1,5 @@
+{
+  "name": "Journal Minimal",
+  "description": "A minimalist daily journal application to track your mood, thoughts, and favorite songs. All data is stored locally in your browser.",
+  "requestFramePermissions": []
+}

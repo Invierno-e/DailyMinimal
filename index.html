@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenith Journal</title>
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#FFFDF5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'sans': ['Space Mono', 'monospace'],
+            'display': ['Archivo Black', 'sans-serif'],
+          },
+          colors: {
+            'off-white': '#FFFDF5',
+            'brand-yellow': '#F3E600',
+          },
+          boxShadow: {
+            'brutalist': '4px 4px 0px #000',
+            'brutalist-hover': '6px 6px 0px #000',
+          },
+          borderRadius: {
+              'none': '0',
+              'sm': '0',
+              'DEFAULT': '0',
+              'md': '0',
+              'lg': '0',
+              'full': '0',
+          }
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+        background-color: #FFFDF5; /* off-white */
+        color: #000;
+        font-family: 'Space Mono', monospace;
+    }
+    ::selection {
+        background-color: #F3E600; /* brand-yellow */
+        color: #000;
+    }
+  </style>
+  <script type="importmap">
+    {
+      "imports": {
+        "react": "https://aistudiocdn.com/react@^19.1.1",
+        "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+        "react/": "https://aistudiocdn.com/react@^19.1.1/",
+        "@google/genai": "https://aistudiocdn.com/@google/genai@^1.21.0"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+    <noscript>Necesitas activar JavaScript para usar esta aplicación.</noscript>
+</body>
+</html>
